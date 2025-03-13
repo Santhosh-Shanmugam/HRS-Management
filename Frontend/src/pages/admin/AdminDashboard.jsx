@@ -1,11 +1,9 @@
-import Sidebar from "../components/Sidebar";
-import AdminHeader from "../components/AdminHeader";
-
+import Sidebar from "../../components/Sidebar";
+import AdminHeader from "../../components/AdminHeader";
 const AdminDashboard = () => {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <Sidebar role="admin" />
 
       {/* Main Content */}
       <div className="flex-1 p-6">

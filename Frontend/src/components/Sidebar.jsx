@@ -4,21 +4,21 @@ import { Home, Users, ClipboardList, FileText, Briefcase, User, Calendar, Dollar
 const Sidebar = ({ role }) => {
   const menuItems = {
     admin: [
-      { name: "Dashboard", path: "/admin/dashboard", icon: <Home size={20} /> },
+      { name: "Dashboard", path: "/admin", icon: <Home size={20} /> },
       { name: "User Management", path: "/admin/users", icon: <Users size={20} /> },
       { name: "Attendance Analysis", path: "/admin/attendance", icon: <ClipboardList size={20} /> },
       { name: "Reports", path: "/admin/reports", icon: <FileText size={20} /> },
       { name: "Settings", path: "/admin/settings", icon: <Settings size={20} /> },
     ],
     hr: [
-      { name: "Dashboard", path: "/hr/dashboard", icon: <Home size={20} /> },
+      { name: "Dashboard", path: "/hr", icon: <Home size={20} /> },
       { name: "Employee Management", path: "/hr/employees", icon: <Users size={20} /> },
       { name: "Recruitment", path: "/hr/recruitment", icon: <Briefcase size={20} /> },
       { name: "Leave Management", path: "/hr/leave", icon: <Calendar size={20} /> },
       { name: "Settings", path: "/hr/settings", icon: <Settings size={20} /> },
     ],
     employee: [
-      { name: "Dashboard", path: "/employee/dashboard", icon: <Home size={20} /> },
+      { name: "Dashboard", path: "/employee", icon: <Home size={20} /> },
       { name: "Profile", path: "/employee/profile", icon: <User size={20} /> },
       { name: "Attendance", path: "/employee/attendance", icon: <ClipboardList size={20} /> },
       { name: "Payslip", path: "/employee/payslip", icon: <DollarSign size={20} /> },

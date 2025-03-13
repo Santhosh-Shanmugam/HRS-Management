@@ -1,11 +1,10 @@
-import Sidebar from "../components/Sidebar";
+import Sidebar from "../../components/Sidebar"
 import { Briefcase, CalendarCheck, Users } from "lucide-react";
 
 const HRDashboard = () => {
   return (
-    <div className="flex h-screen bg-gray-100">
+    <div className="flex h-screen bg-gray-100">+
       {/* Sidebar */}
-      <Sidebar role="hr" />
 
       {/* Main Content */}
       <div className="flex-1 p-6">

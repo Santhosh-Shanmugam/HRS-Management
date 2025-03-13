@@ -1,27 +1,35 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import DashboardLayout from "./components/DashboardLayout";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
+
+// Admin Pages
 import AdminDashboard from "./pages/admin/AdminDashboard";
 import UserManagement from "./pages/admin/UserManagement";
 import AttendanceAnalysis from "./pages/admin/AttendanceAnalysis";
 import Reports from "./pages/admin/Reports";
 import Settings from "./pages/admin/Settings";
 
+// HR Pages
 import HRDashboard from "./pages/hr/HRDashboard";
 import EmployeeManagement from "./pages/hr/EmployeeManagement";
 import Recruitment from "./pages/hr/Recruitment";
 import LeaveManagement from "./pages/hr/LeaveManagement";
 
+// Employee Pages
 import EmployeeDashboard from "./pages/employee/EmployeeDashboard";
-// import DashBoard from "./pages/employee/DashBoard";
 import Profile from "./pages/employee/Profile";
 import Attendance from "./pages/employee/Attendance";
 import Payslip from "./pages/employee/Payslip";
-// import SettingsPage from "./pages/SettingsPage";
 
 const App = () => {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Login />} />
+        {/* <Route path="/signup" element={<Signup />} /> */}
+
         {/* Admin Routes */}
         <Route path="/admin" element={<DashboardLayout role="admin" />}>
           <Route index element={<AdminDashboard />} />
@@ -43,7 +51,6 @@ const App = () => {
         {/* Employee Routes */}
         <Route path="/employee" element={<DashboardLayout role="employee" />}>
           <Route index element={<EmployeeDashboard />} />
-          {/* <Route path="dashboard" element={<DashBoard />} /> */}
           <Route path="profile" element={<Profile />} />
           <Route path="attendance" element={<Attendance />} />
           <Route path="payslip" element={<Payslip />} />

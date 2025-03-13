@@ -1,3 +1,4 @@
+import React from "react";
 import { Bell, UserCircle } from "lucide-react";
 
 const AdminHeader = () => {

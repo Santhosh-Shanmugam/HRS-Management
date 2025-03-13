@@ -1,3 +1,4 @@
+import React from "react";
 import Sidebar from "../../components/Sidebar";
 import { User, Calendar, FileText } from "lucide-react";
 

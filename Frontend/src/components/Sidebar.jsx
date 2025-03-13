@@ -1,3 +1,4 @@
+import React from "react";
 import { Link } from "react-router-dom";
 import { Home, Users, ClipboardList, FileText, Briefcase, User, Calendar, DollarSign, Settings } from "lucide-react";
 
@@ -27,7 +28,7 @@ const Sidebar = ({ role }) => {
   };
 
   return (
-    <div className="w-64 bg-gray-900 text-white h-screen p-5 shadow-lg">
+    <div className="w-64 bg-gray-900 text-white h-screen p-5 shadow-lg relative">
       <h2 className="text-xl font-bold mb-6 text-gray-200">{role.toUpperCase()} Dashboard</h2>
       <ul>
         {menuItems[role].map((item, index) => (
